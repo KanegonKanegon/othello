@@ -51,7 +51,7 @@ export default function Home() {
     //playerは自分の駒
     let nx = x + dx; // 左右隣のマス dxは方向ベクトル
     let ny = y + dy; // 上下隣のマス dyは方向ベクトル
-    let stonesToFlip = []; //ひっくり返す駒の位置一覧
+    const stonesToFlip = []; //ひっくり返す駒の位置一覧
 
     //隣接マスがボード外または、上下左右の隣接マスに色違いの駒がない場合、置けるわけない
     if (!isOnBoard(nx, ny) || board[ny][nx] !== getOpponent(player)) {
