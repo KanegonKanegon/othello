@@ -167,7 +167,7 @@ export default function Home() {
                       borderRadius: '50%',
                       backgroundColor: getColor(cell),
                     }}
-                  ></div>
+                  />
                 </div>
               ),
             ),
